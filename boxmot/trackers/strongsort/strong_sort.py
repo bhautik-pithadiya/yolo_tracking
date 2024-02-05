@@ -18,8 +18,8 @@ class StrongSORT(object):
         fp16,
         max_dist=0.2,
         max_iou_dist=0.7,
-        max_age=30,
-        n_init=1,
+        max_age=100,
+        n_init=3, # changed from 1 to 3
         nn_budget=100,
         mc_lambda=0.995,
         ema_alpha=0.9,
