@@ -11,6 +11,9 @@ __pycache__/
 # experiment results
 runs/
 videos/
+cctv_footage/
+test_case/
+imaes/
 
 # Downloaded weights
 weights/*.pt
