@@ -5,6 +5,8 @@ from functools import partial
 from pathlib import Path
 
 import torch
+import sys
+sys.path.append("../boxmot")
 
 from boxmot import TRACKERS
 from boxmot.tracker_zoo import create_tracker

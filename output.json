@@ -1,0 +1,42 @@
+[
+    {
+        "Sorting_algo": "StrongSort",
+        "re-id weights" : "osnet_ain_x1_0_msmt17.pt",
+        "yolo_model" : "yolo_nas_l",
+        "input_dir" : "test_case/test_case_clip.mp4",
+        "output_dir" : "runs/track/exp15/test_case_clip.avi"
+
+    },
+    {
+        "Sorting_algo": "HybridSort",
+        "re-id weights": "osnet_ain_x1_0_msmt17.pt",
+        "yolo_model": "yolob8n",
+        "input_dir": "cctv_footage/Entrance_Video/entrance_clip.mp4",
+        "output_dir": "runs/track/exp25/entrance_clip.avi",
+        "Description" : "This setting can solve the partial occlusion problem like decorations came in between the person then it can assign them properly."
+    },
+    {
+        "Sorting_algo": "HybridSort",
+        "re-id weights": "osnet_ain_x_0_msmt17.pt",
+        "yolo_model": "yolo_nas_l",
+        "input_dir": "cctv_footage/Entrance_Video/entrance_clip.mp4",
+        "output_dir": "runs/track/exp26/entrance_clip.avi",
+        "Description" : "Same as above but takes more time due to yolo-nas-l model."
+    },
+    {
+        "Sorting_algo": "HybridSort",
+        "re-id weights": "osnet_ain_x1_0_msmt17.pt",
+        "yolo_model": "yolo_nas_l",
+        "input_dir": "test_case/test_case_clip.mp4",
+        "output_dir": "runs/track/exp27/test_case_clip.avi",
+        "Description" : "From these setting we can conclude that using Hybrid Sort we can't solve body occlusion properly."
+    },
+    {
+        "Sorting_algo": "HybridSort",
+        "re-id weights": "osnet_ain_x1_0_msmt17.pt",
+        "yolo_model": "yolov8s",
+        "input_dir": "test_case/test_case_clip.mp4",
+        "output_dir": "runs/track/exp28/test_case_clip.avi",
+        "Description" : "Same as previous but takes less time due the yolov8s (small) model"
+    }
+]
